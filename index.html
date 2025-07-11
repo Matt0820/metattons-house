@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metatton's House</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pixelify+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body
+    class="bg-black text-light"
+    style="font-family: 'Montserrat', sans-serif"
+  >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #910d8a">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="/views/thatsme.html"
+          style="font-family: 'VT323', monospace; font-size: 2rem; color: #fff"
+        >
+          Metatton's House
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/views/personagens.html"
+                >Personagens</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/views/jogos.html">
+                Extras⭐
+              </a>
+
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Routes</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Pacifist</a></li>
+                <li><a class="dropdown-item" href="#">Genocide</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Neutral</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="container py-5">
+      <div class="row g-4">
+        <!-- Accordion - Info sobre o jogo -->
+        <div class="col-md-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item bg-dark text-light">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  What is Undertale?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  Undertale is a game where you play as a child who falls into
+                  the Underground — a place full of monsters, magic, and
+                  unexpected friendships.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-light">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  Where does it take place?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  It begins in the Ruins, where you're saved by Toriel — and
+                  quickly learn that not every monster is friendly. Especially
+                  not a talking flower named Flowey.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-light">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                >
+                  Who created it?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Undertale was created by Toby Fox, and it's filled with humor,
+                  emotion, and choices that really matter. Every action counts —
+                  especially in a world where you don’t have to kill anyone.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel de imagens -->
+        <div class="col-md-6">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner rounded border border-secondary">
+              <div class="carousel-item active">
+                <img
+                  src="misc/img/Undertale.jpg"
+                  class="d-block w-100"
+                  alt="Undertale title screen"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="misc/img/ruins.jpg"
+                  class="d-block w-100"
+                  alt="Ruins screenshot"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="misc/img/castle.jpg"
+                  class="d-block w-100"
+                  alt="Castle screenshot"
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Separando o layout-->
+    <section class="container py-5">
+      <h2
+        class="text-center mb-4"
+        style="font-family: 'Pixelify Sans', sans-serif"
+      >
+        🎹 Meet the Creator
+      </h2>
+
+      <div class="card bg-dark text-light border-secondary shadow p-4">
+        <div class="row g-4 align-items-center">
+          <!-- Toby Fox -->
+          <div class="col-md-4 text-center">
+            <img
+              src="misc/img/toby.gif"
+              alt="Toby Fox"
+              class="img-fluid rounded-circle border border-light mb-3"
+              style="max-width: 200px"
+            />
+            <h5 style="font-family: 'Pixelify Sans', sans-serif">Toby Fox</h5>
+            <p class="mb-1">Creator of Undertale and Deltarune.</p>
+            <small
+              >Composer. Programmer. Mysterious dog enthusiast.</small
+            >
+          </div>
+
+          <!-- Jogos -->
+          <div class="col-md-8">
+            <div class="row">
+              <!-- Undertale -->
+              <div class="col-md-6 mb-4">
+                <div
+                  class="card bg-black text-light h-100 border border-secondary"
+                >
+                  <img
+                    src="misc/img/undetale-logo.jpg"
+                    class="card-img-top p-3"
+                    alt="Undertale Logo"
+                    style="max-height: 120px; object-fit: contain"
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="font-family: 'VT323', monospace"
+                    >
+                      Undertale
+                    </h5>
+                    <p class="card-text">
+                      An RPG where you can spare everyone. Emotion, choices, and a certain skeleton who plays the trombone.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deltarune -->
+              <div class="col-md-6 mb-4">
+                <div
+                  class="card bg-black text-light h-100 border border-secondary"
+                >
+                  <img
+                    src="misc/img/Deltarune Symbol.jpg"
+                    class="card-img-top p-3"
+                    alt="Deltarune Logo"
+                    style="max-height: 120px; object-fit: contain"
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="font-family: 'VT323', monospace"
+                    >
+                      Deltarune
+                    </h5>
+                    <p class="card-text">
+                      A new story with familiar faces. More mystery, more emotion, more chaos. And maybe... more Sans?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+        <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <p>Made by <a href="https://www.instagram.com/kkmat_hh/" target="_blank" rel="noopener noreferrer">@Kkmatt_hh</a></p>
+            </div>
+        </div>
+        <br><br>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-...exato-hash..."
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
