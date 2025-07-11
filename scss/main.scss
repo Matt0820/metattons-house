@@ -34,6 +34,31 @@ $navbar-color: #000000;   // cor do texto da navbar
   font-weight: 400;
   font-style: normal;
 }
+@keyframes soulCycle {
+  0%   { color: red; }
+  14%  { color: orange; }
+  28%  { color: yellow; }
+  42%  { color: green; }
+  57%  { color: cyan; }
+  71%  { color: blue; }
+  85%  { color: purple; }
+  100% { color: red; }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px); }
+  20% { transform: translate(-2px, 0px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-1px, -1px); }
+  80% { transform: translate(1px, -2px); }
+  100% { transform: translate(0px, 1px); }
+}
+
+.soul-glitch {
+  animation: soulCycle 2s infinite, shake 0.15s infinite;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
 
 // Importa o Bootstrap SCSS
 @import "../node_modules/bootstrap/scss/bootstrap";
