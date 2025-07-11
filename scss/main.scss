@@ -1,0 +1,39 @@
+// Sobrescreva as variáveis ANTES de importar o Bootstrap
+$navbar-bg: #ff3ca6;      // cor de fundo da navbar (rosa Metatton)
+$navbar-color: #000000;   // cor do texto da navbar
+.navbar {
+  background-color: $navbar-bg;
+  color: $navbar-color;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.accordion-button {
+  background-color: #111;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #222;
+  color: #fff;
+}
+
+.accordion-body {
+  background-color: #000;
+  color: #fff;
+}
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Importa o Bootstrap SCSS
+@import "../node_modules/bootstrap/scss/bootstrap";
